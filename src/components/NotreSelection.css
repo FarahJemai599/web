@@ -1,0 +1,52 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .carousel-button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    color: #333;
+  }
+  
+  .carousel-button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-image {
+    width: 306px; /* Fixer la largeur de l'image à 306px */
+    height: 306px; /* Fixer la hauteur de l'image à 306px */
+    object-fit: cover; /* Assurer que l'image garde un ratio de 1:1 et soit recadrée si nécessaire */
+    border-radius: 8px;
+    margin-right: 15px; /* Ajout d'espace entre les images */
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-container {
+      padding: 10px;
+    }
+  
+    .carousel-image {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  

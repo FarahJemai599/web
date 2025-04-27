@@ -1,0 +1,133 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Section Hero */
+  .hero-section {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .hero-section h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .categories button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Produits */
+  .featured-products {
+    margin: 40px 0;
+  }
+  
+  .featured-products h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .price {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .brand {
+    color: #7f8c8d;
+    font-style: italic;
+  }
+  
+  .note {
+    color: #3498db;
+    font-size: 0.9rem;
+  }
+  
+  /* Sections catégories */
+  .category-section {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .category-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .category-header h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+  }
+  
+  .category-header p {
+    color: #7f8c8d;
+  }
+  
+  .popular-categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .category-item {
+    text-align: center;
+    padding: 15px 25px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .category-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }

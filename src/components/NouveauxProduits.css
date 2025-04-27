@@ -1,0 +1,79 @@
+.products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-right: 1000px;
+    color: #d32f2f;
+    margin-bottom: 30px; /* Augmenter l'espacement entre le titre et les produits */
+  }
+  
+  .products-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes au total */
+    gap: 40px; /* Augmenter encore l'espacement entre les produits */
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .product-item {
+    text-align: center;
+    display: flex;
+    flex-direction: row; /* Met le texte à côté de l'image */
+    align-items: center;
+    justify-content: flex-start; /* Aligner les éléments à gauche */
+    padding: 20px; /* Augmenter le padding autour de chaque produit */
+    transition: transform 0.3s ease;
+  }
+  
+  .product-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-image {
+    width: 140px; /* Ajuster la taille de l'image pour plus d'espace */
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 30px; /* Augmenter l'espace entre l'image et le texte */
+  }
+  
+  .product-name {
+    font-size: 18px; /* Augmenter la taille du texte */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .product-price {
+    font-size: 16px; /* Augmenter légèrement la taille du prix */
+    color: #555;
+  }
+  
+  /* Styles pour KEBO - deux produits par colonne */
+  .kebo-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 produits par ligne */
+    gap: 30px; /* Augmenter l'espacement entre les produits dans la colonne KEBO */
+  }
+  
+  /* Pour les petits écrans */
+  @media (max-width: 768px) {
+    .products-columns {
+      grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur les petits écrans */
+    }
+  
+    .kebo-column {
+      grid-template-columns: 1fr; /* 1 produit par ligne sur petits écrans */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .products-columns {
+      grid-template-columns: 1fr; /* 1 colonne sur les très petits écrans */
+    }
+  }
+  
